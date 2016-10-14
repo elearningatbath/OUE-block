@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2013092500;        // The current plugin version (Date: YYYYMMDDXX)
-$plugin->requires  = 2011112900;        // Requires this Moodle version
+$plugin->version = 2016080900;        // The current plugin version (Date: YYYYMMDDXX)
+$plugin->requires = 2011112900;        // Requires this Moodle version
 $plugin->component = 'block_bath_oue'; // Full name of the plugin (used for diagnostics)
+$plugin->dependencies = array(
+    'enrol_samisv2' => ANY_VERSION
+);
